@@ -1,0 +1,11 @@
+uuid: dc4f18c1-0adc-410f-a000-b71f824a125b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: V4kEJzI6kqZ9qVXKGyhOCUkL5K6ab7CL73QbvExeBkU
+id: default
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 0
