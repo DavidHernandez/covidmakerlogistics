@@ -1,0 +1,8 @@
+services:
+  Drupal\makers_logistics_logic\EventSubscriber\AppHandler:
+    tags:
+      - { name: event_subscriber }
+
+  Drupal\makers_logistics_logic\EventSubscriber\LabelCalculationManager:
+    tags:
+      - { name: event_subscriber }

@@ -1,19 +1,19 @@
-uuid: b8ba385a-6556-49d2-a79a-1bde35497cef
+uuid: 6fe645b2-c6f8-4c43-8ef1-c6b078b477e7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.pickup_request.field_material
-    - node.type.pickup_request
+    - field.field.node.demand.field_material
+    - node.type.demand
   module:
     - user
-id: node.pickup_request.default
+id: node.demand.default
 targetEntityType: node
-bundle: pickup_request
+bundle: demand
 mode: default
 content:
   field_material:
-    weight: 103
+    weight: 101
     label: above
     settings:
       link: true

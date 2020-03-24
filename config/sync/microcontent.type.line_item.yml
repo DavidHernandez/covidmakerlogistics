@@ -1,0 +1,8 @@
+uuid: 5aecd607-93d4-4edf-832e-a00b51678a3f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Line Item'
+id: line_item
+description: ''
+type_class: ''

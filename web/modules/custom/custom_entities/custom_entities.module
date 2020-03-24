@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_entities.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function custom_entities_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the custom_entities module.
+    case 'help.page.custom_entities':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The system custom entities') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function custom_entities_theme() {
+  $theme = [];
+  $theme['line_item'] = [
+    'render element' => 'elements',
+    'file' => 'line_item.page.inc',
+    'template' => 'line_item',
+  ];
+  $theme['line_item_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'line_item.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function custom_entities_theme_suggestions_line_item(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#line_item'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'line_item__' . $sanitized_view_mode;
+  $suggestions[] = 'line_item__' . $entity->bundle();
+  $suggestions[] = 'line_item__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'line_item__' . $entity->id();
+  $suggestions[] = 'line_item__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

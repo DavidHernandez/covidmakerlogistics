@@ -1,0 +1,5 @@
+name: 'Custom Entities'
+type: module
+description: 'The system custom entities'
+core: 8.x
+package: 'Custom'

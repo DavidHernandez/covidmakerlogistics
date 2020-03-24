@@ -1,0 +1,8 @@
+name: 'Makers Logistics Logic'
+type: module
+description: 'The logic of the makers logistic system'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - drupal:hook_event_dispatcher
+  - drupal:discoverable_entity_bundle_classes

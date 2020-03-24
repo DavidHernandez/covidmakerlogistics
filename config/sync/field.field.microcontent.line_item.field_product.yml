@@ -1,17 +1,17 @@
-uuid: 359ba497-9723-44ee-969b-b5610207be32
+uuid: 0dc4566a-1974-466d-8e9a-31a67bfa7084
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_product
-    - node.type.pickup_request
+    - field.storage.microcontent.field_product
+    - microcontent.type.line_item
     - taxonomy.vocabulary.product
-id: node.pickup_request.field_product
+id: microcontent.line_item.field_product
 field_name: field_product
-entity_type: node
-bundle: pickup_request
+entity_type: microcontent
+bundle: line_item
 label: Producto
-description: 'Selecciona el producto que tienes disponible.'
+description: 'Selecciona el producto '
 required: true
 translatable: false
 default_value: {  }

@@ -1,0 +1,32 @@
+uuid: f6a7b4b3-bb34-4c07-928d-19fb1f093e0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.microcontent.line_item.field_product
+    - field.field.microcontent.line_item.field_quantity
+    - microcontent.type.line_item
+id: microcontent.line_item.default
+targetEntityType: microcontent
+bundle: line_item
+mode: default
+content:
+  field_product:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_quantity:
+    weight: 1
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  label: true
+  revision_log: true
+  status: true
+  uid: true

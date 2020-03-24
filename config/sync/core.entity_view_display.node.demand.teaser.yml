@@ -1,16 +1,16 @@
-uuid: b0c46f3b-b2fa-42bd-81f6-b63d5faec468
+uuid: 6ecb4b75-95bf-426b-b21b-b73ac92c963e
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.pickup_request.field_material
-    - node.type.pickup_request
+    - field.field.node.demand.field_material
+    - node.type.demand
   module:
     - user
-id: node.pickup_request.teaser
+id: node.demand.teaser
 targetEntityType: node
-bundle: pickup_request
+bundle: demand
 mode: teaser
 content:
   links:

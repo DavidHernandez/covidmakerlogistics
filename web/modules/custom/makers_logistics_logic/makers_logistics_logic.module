@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains makers_logistics_logic.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function makers_logistics_logic_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the makers_logistics_logic module.
+    case 'help.page.makers_logistics_logic':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The logic of the makers logistic system') . '</p>';
+      return $output;
+
+    default:
+  }
+}

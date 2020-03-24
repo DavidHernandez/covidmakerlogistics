@@ -1,0 +1,25 @@
+uuid: fe51937f-8d7a-415d-95e2-1ac60af7d97c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.microcontent.field_quantity
+    - microcontent.type.line_item
+id: microcontent.line_item.field_quantity
+field_name: field_quantity
+entity_type: microcontent
+bundle: line_item
+label: Cantidad
+description: 'Indica la cantidad que necesitas.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

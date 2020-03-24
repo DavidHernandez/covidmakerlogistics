@@ -1,0 +1,28 @@
+uuid: 9c6f5750-6d5b-4202-8092-37692d74e932
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_material
+    - microcontent.type.line_item
+    - node.type.demand
+id: node.demand.field_material
+field_name: field_material
+entity_type: node
+bundle: demand
+label: 'Material solicitado'
+description: 'Añade las necesidades de material que tienes.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:microcontent'
+  handler_settings:
+    target_bundles:
+      line_item: line_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

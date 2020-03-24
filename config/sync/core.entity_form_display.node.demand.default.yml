@@ -1,25 +1,25 @@
-uuid: 0e754b82-e912-4c31-8459-99c2860e27a4
+uuid: df08a6ac-887e-40ea-9843-a35487fa7435
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.pickup_request.field_material
-    - node.type.pickup_request
+    - field.field.node.demand.field_material
+    - node.type.demand
   module:
     - inline_entity_form
-id: node.pickup_request.default
+id: node.demand.default
 targetEntityType: node
-bundle: pickup_request
+bundle: demand
 mode: default
 content:
   field_material:
     weight: 0
     settings:
       form_mode: default
-      label_singular: ''
-      label_plural: ''
       revision: false
       override_labels: false
+      label_singular: ''
+      label_plural: ''
       collapsible: false
       collapsed: false
     third_party_settings: {  }
