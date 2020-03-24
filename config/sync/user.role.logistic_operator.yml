@@ -1,0 +1,9 @@
+uuid: 77ec44fa-da19-4a2b-91eb-ce6dbf5c8db9
+langcode: en
+status: true
+dependencies: {  }
+id: logistic_operator
+label: 'Logistic operator'
+weight: -8
+is_admin: null
+permissions: {  }

@@ -1,0 +1,14 @@
+uuid: e7d0d816-0a5a-431b-b6fb-d46034382d31
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.logistic_operator
+  module:
+    - user
+id: user_add_role_action.logistic_operator
+label: 'Add the Logistic operator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: logistic_operator
