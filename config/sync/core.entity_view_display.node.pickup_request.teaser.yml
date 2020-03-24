@@ -1,0 +1,24 @@
+uuid: b0c46f3b-b2fa-42bd-81f6-b63d5faec468
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pickup_request.field_amount
+    - field.field.node.pickup_request.field_product
+    - node.type.pickup_request
+  module:
+    - user
+id: node.pickup_request.teaser
+targetEntityType: node
+bundle: pickup_request
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_amount: true
+  field_product: true

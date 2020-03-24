@@ -1,0 +1,38 @@
+uuid: b8ba385a-6556-49d2-a79a-1bde35497cef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pickup_request.field_amount
+    - field.field.node.pickup_request.field_product
+    - node.type.pickup_request
+  module:
+    - user
+id: node.pickup_request.default
+targetEntityType: node
+bundle: pickup_request
+mode: default
+content:
+  field_amount:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_product:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

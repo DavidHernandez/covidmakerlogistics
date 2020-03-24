@@ -1,0 +1,8 @@
+uuid: 9df770ab-6287-44df-8ea3-b0ca2cd9057d
+langcode: en
+status: true
+dependencies: {  }
+name: Producto
+vid: product
+description: 'Los distintos productos que pueden ser gestionados por el sistema'
+weight: 0

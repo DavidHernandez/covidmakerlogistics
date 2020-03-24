@@ -1,0 +1,23 @@
+uuid: 66b3665f-72d9-463b-9578-e1c30dcbec4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_amount
+    - node.type.pickup_request
+id: node.pickup_request.field_amount
+field_name: field_amount
+entity_type: node
+bundle: pickup_request
+label: Cantidad
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 10
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
