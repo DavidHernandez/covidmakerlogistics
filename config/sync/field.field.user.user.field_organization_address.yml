@@ -1,0 +1,52 @@
+uuid: bf9b9d89-d5eb-49bc-b1ba-292030ec24c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_organization_address
+  module:
+    - address
+    - user
+id: user.user.field_organization_address
+field_name: field_organization_address
+entity_type: user
+bundle: user
+label: 'Dirección de la organización'
+description: 'Introduce la dirección de tu organización.'
+required: true
+translatable: false
+default_value:
+  -
+    country_code: ES
+    langcode: ''
+    given_name: ''
+    family_name: ''
+    organization: ''
+    address_line1: ''
+    address_line2: ''
+    postal_code: ''
+    locality: ''
+    administrative_area: ''
+    additional_name: null
+    sorting_code: null
+    dependent_locality: null
+default_value_callback: ''
+settings:
+  available_countries:
+    ES: ES
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    sortingCode:
+      override: hidden
+    dependentLocality:
+      override: hidden
+  fields: {  }
+field_type: address

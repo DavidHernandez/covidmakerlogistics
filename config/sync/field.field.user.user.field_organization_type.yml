@@ -1,0 +1,30 @@
+uuid: 90a158fc-206e-4352-9a81-521b801b3307
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_organization_type
+    - taxonomy.vocabulary.organization_type
+  module:
+    - user
+id: user.user.field_organization_type
+field_name: field_organization_type
+entity_type: user
+bundle: user
+label: Organización
+description: 'Selecciona el tipo de organización de la que formas parte.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      organization_type: organization_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

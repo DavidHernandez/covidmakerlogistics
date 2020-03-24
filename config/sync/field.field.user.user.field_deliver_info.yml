@@ -1,0 +1,20 @@
+uuid: 5c2d0f75-3f8f-4a1a-b2a5-83b88424454b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_deliver_info
+  module:
+    - user
+id: user.user.field_deliver_info
+field_name: field_deliver_info
+entity_type: user
+bundle: user
+label: 'Información sobre las entregas'
+description: "Indica los pasos que tiene que seguir el repartidor cuando llegue con el material. Por quién tiene que preguntar o a dónde se tiene que dirigir.\r\n\r\n<strong>ESTA INFORMACIÓN ES PÚBLICA</strong>"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

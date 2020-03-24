@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_address
+    - field.field.user.user.field_deliver_info
+    - field.field.user.user.field_organization_address
+    - field.field.user.user.field_organization_type
+    - field.field.user.user.field_user_type
   module:
     - address
+    - conditional_fields
     - user
 _core:
   default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
@@ -20,10 +25,108 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_address:
+    weight: 2
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        67ef2b3c-731d-4ce3-832c-65edc163fb35:
+          dependee: field_user_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: maker
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: user
+          bundle: user
+    type: address_default
+    region: content
+  field_deliver_info:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        cc68eef2-124e-4d4d-b470-cc5847face86:
+          dependee: field_user_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: organization
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: user
+          bundle: user
+    type: string_textarea
+    region: content
+  field_organization_address:
+    weight: 4
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        773d4301-262b-4dee-af1f-c148b37a380b:
+          dependee: field_user_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: organization
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: user
+          bundle: user
+    type: address_default
+    region: content
+  field_organization_type:
+    weight: 3
+    settings: {  }
+    third_party_settings:
+      conditional_fields:
+        7cd83548-e464-4a79-969c-2d2aa1115daf:
+          dependee: field_user_type
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: organization
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: user
+          bundle: user
+    type: options_select
+    region: content
+  field_user_type:
     weight: 1
     settings: {  }
     third_party_settings: {  }
-    type: address_default
+    type: options_select
     region: content
 hidden:
   contact: true
