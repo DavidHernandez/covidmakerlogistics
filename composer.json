@@ -26,6 +26,7 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
         "drupal/address": "^1.8",
         "drupal/admin_toolbar": "^2.2",
         "drupal/components": "^1.1",
@@ -40,6 +41,7 @@
         "drupal/hook_event_dispatcher": "^1.27",
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/microcontent": "^1.0@alpha",
+        "drupal/migrate_default_content": "2.x-dev",
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/radix": "^4.8",
         "drupal/redirect": "^1.5",
@@ -111,8 +113,8 @@
             ]
         },
         "patches": {
-            "drupal/themable_forms": {
-                "Merged patch of: #2955278 #2887429 - https://www.drupal.org/files/issues/2019-06-27/themable_forms-2955278-11.patch - https://www.drupal.org/files/issues/checkboxes_support-2887429-1.patch - https://www.drupal.org/files/issues/checkbox_support-2887429-2.patch": "https://www.drupal.org/files/issues/2019-10-20/themable_forms-3088982-3.patch"
+            "drupal/migrate_default_content": {
+                "Content export command": "https://www.drupal.org/files/issues/2020-03-20/export_command-2.patch"
             }
         }
     },

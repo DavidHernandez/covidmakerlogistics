@@ -1,0 +1,42 @@
+uuid: e4c2be80-e5d9-402a-b925-1fe8398f3142
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.submission.field_demand
+    - field.field.node.submission.field_pickup_requests
+    - node.type.submission
+id: node.submission.default
+targetEntityType: node
+bundle: submission
+mode: default
+content:
+  field_demand:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_pickup_requests:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true
+  url_redirects: true

@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_address
     - field.field.user.user.field_deliver_info
-    - field.field.user.user.field_organization_address
     - field.field.user.user.field_organization_type
     - field.field.user.user.field_user_type
   module:
@@ -21,7 +20,6 @@ content: {  }
 hidden:
   field_address: true
   field_deliver_info: true
-  field_organization_address: true
   field_organization_type: true
   field_user_type: true
   member_for: true

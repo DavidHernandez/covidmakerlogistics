@@ -1,4 +1,4 @@
-uuid: fe91ca29-71bf-4a33-b6ed-f4ba2a385a71
+uuid: 0959c3d7-80b9-4c42-9e6f-0eea4935ce54
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Solicitud de recogida'
-type: pickup_request
-description: 'Crea una solicitud de recogida cuando tengas suficiente material para ser recogido.'
+name: Envio
+type: submission
+description: 'Crea un envío cuando quieras asignar peticiones de recogida con demandas. '
 help: ''
 new_revision: true
 preview_mode: 1

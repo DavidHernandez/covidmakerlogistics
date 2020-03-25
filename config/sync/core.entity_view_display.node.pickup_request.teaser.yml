@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.pickup_request.field_material
+    - field.field.node.pickup_request.field_status
     - node.type.pickup_request
   module:
     - user
@@ -20,3 +21,4 @@ content:
     region: content
 hidden:
   field_material: true
+  field_status: true

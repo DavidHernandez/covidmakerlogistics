@@ -1,0 +1,42 @@
+-
+    uuid: 01ef510f-6986-4634-b6e4-0fdf1f158067
+    tid: '2'
+    vid: organization_type
+    status: '1'
+    name: Hopistal
+    description: { value: null, format: null }
+-
+    uuid: 4be61a1c-76a1-4d19-a09d-3bdde107a401
+    tid: '5'
+    vid: organization_type
+    status: '1'
+    name: 'Policia nacional'
+    description: { value: null, format: null }
+-
+    uuid: 5ccee970-226c-4d75-9b68-ca37d93a583c
+    tid: '7'
+    vid: organization_type
+    status: '1'
+    name: Bomberos
+    description: { value: null, format: null }
+-
+    uuid: 6316da03-8296-4781-aaeb-ba3c5409f506
+    tid: '6'
+    vid: organization_type
+    status: '1'
+    name: 'Guardia civil'
+    description: { value: null, format: null }
+-
+    uuid: 8eda9f3e-303f-470f-a49d-612346bd814e
+    tid: '3'
+    vid: organization_type
+    status: '1'
+    name: 'Centro de salud'
+    description: { value: null, format: null }
+-
+    uuid: a8d70d4a-b403-436d-bff4-46d455a3b5dd
+    tid: '4'
+    vid: organization_type
+    status: '1'
+    name: 'Policia local'
+    description: { value: null, format: null }

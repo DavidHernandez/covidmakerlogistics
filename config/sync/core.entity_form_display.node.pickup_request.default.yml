@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.pickup_request.field_material
+    - field.field.node.pickup_request.field_status
     - node.type.pickup_request
   module:
     - inline_entity_form
@@ -24,6 +25,12 @@ content:
       collapsed: false
     third_party_settings: {  }
     type: inline_entity_form_simple
+    region: content
+  field_status:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

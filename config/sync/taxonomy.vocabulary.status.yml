@@ -1,0 +1,8 @@
+uuid: b589904f-ff2b-41a2-8e79-d53385b789fd
+langcode: en
+status: true
+dependencies: {  }
+name: Estado
+vid: status
+description: ''
+weight: 0

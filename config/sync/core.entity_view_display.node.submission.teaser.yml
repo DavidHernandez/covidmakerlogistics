@@ -1,0 +1,24 @@
+uuid: 4da23663-01ca-471b-ae8c-5d515a5e8102
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.submission.field_demand
+    - field.field.node.submission.field_pickup_requests
+    - node.type.submission
+  module:
+    - user
+id: node.submission.teaser
+targetEntityType: node
+bundle: submission
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_demand: true
+  field_pickup_requests: true

@@ -1,0 +1,28 @@
+uuid: 003e1720-8767-4c91-a2fc-60cb38d4b757
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_demand
+    - node.type.demand
+    - node.type.submission
+id: node.submission.field_demand
+field_name: field_demand
+entity_type: node
+bundle: submission
+label: Demanda
+description: 'Selecciona la demanda donde va a ir el envío'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      demand: demand
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

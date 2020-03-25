@@ -6,3 +6,11 @@ services:
   Drupal\makers_logistics_logic\EventSubscriber\LabelCalculationManager:
     tags:
       - { name: event_subscriber }
+
+  Drupal\makers_logistics_logic\EventSubscriber\PickupRequestManager:
+    tags:
+      - { name: event_subscriber }
+
+  Drupal\makers_logistics_logic\EventSubscriber\SubmissionManager:
+    tags:
+      - { name: event_subscriber }

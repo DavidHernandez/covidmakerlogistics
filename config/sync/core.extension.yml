@@ -10,7 +10,6 @@ module:
   color: 0
   comment: 0
   components: 0
-  conditional_fields: 0
   config: 0
   contact: 0
   contextual: 0
@@ -36,6 +35,9 @@ module:
   media_library: 0
   menu_ui: 0
   microcontent: 0
+  migrate: 0
+  migrate_default_content: 0
+  migrate_source_yaml: 0
   node: 0
   options: 0
   page_cache: 0
