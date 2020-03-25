@@ -15,3 +15,10 @@ The system is based on Drupal 8.
 ## Export your configuration
 
 * For doing this, you just have to execute `vendor/bin/drush cex`
+
+## Generating default content:
+
+* Export content: `vendor/bin/drush mdce`
+* Review the exported content and remove whatever is not necessary.
+* Generate automatic import files: `vendor/bin/drush mdcby`
+* Commit and push
