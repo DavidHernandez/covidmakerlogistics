@@ -42,6 +42,8 @@
         "drupal/inline_entity_form": "^1.0@RC",
         "drupal/microcontent": "^1.0@alpha",
         "drupal/migrate_default_content": "2.x-dev",
+        "drupal/migrate_plus": "^4.2",
+        "drupal/migrate_tools": "^4.5",
         "drupal/rabbit_hole": "^1.0@beta",
         "drupal/radix": "^4.8",
         "drupal/redirect": "^1.5",

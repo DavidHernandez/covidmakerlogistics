@@ -9,6 +9,7 @@ The system is based on Drupal 8.
 * To be allowed to use the same configuration, we need all the instances of the site to use the same UUID: `590ec665-6ebb-4b61-b4cc-146f1b49e4fd`. Execute `vendor/bin/drush --yes config-set "system.site" uuid "590ec665-6ebb-4b61-b4cc-146f1b49e4fd"`
 * Update settings.php and change the `config_sync_variable` to be `$settings['config_sync_directory'] = '../config/sync/';`
 * Execute the next command: `vendor/bin/drush ev '\Drupal::entityManager()->getStorage("shortcut_set")->load("default")->delete();'`
+* Update default content: `vendor/bin/drush migrate-import --tag=migrate_default_content`
 * Now you can import the configuration: `vendor/bin/drush cim -y`
 
 ## Export your configuration
