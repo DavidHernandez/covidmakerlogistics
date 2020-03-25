@@ -1,7 +1,21 @@
 -
+    uuid: 15ac9fcb-297d-4da1-8c9d-e0d892dc11a5
+    tid: '12'
+    vid: product
+    status: '1'
+    name: 'Goma elástica'
+    description: { value: null, format: null }
+-
     uuid: 43f968f3-de8d-4a4e-a3f0-747a4e9759c7
     tid: '1'
     vid: product
     status: '1'
     name: Visera
+    description: { value: null, format: null }
+-
+    uuid: baf9534d-d931-4779-821c-9d2854b74fbb
+    tid: '11'
+    vid: product
+    status: '1'
+    name: 'Acetato A4'
     description: { value: null, format: null }
